@@ -170,7 +170,8 @@
   "level": 1,
   "entries": [
     "The power of the Sun courses through your veins, cleansing nuclear fire and nourishing light both.",
-    "Whenever you roll for healing or radiant damage, add your level to the roll. "]
+    "Whenever you roll for healing or radiant damage, add your level to the roll.",
+    "This bonus to radiant damage applies only once per attack."]
 },
 {"name": "Lunar Sorcery Expanded Spell List",
   "source": "immuneresponse",
