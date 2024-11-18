@@ -20,20 +20,70 @@
     }
   ],
   "dateAdded": 1729763270,
-  "dateLastModified": 1729763270
+  "dateLastModified": 1731898823
 },
 
 "subclass": [
     {
         "name": "The Lord Below",
         "source": "immuneresponse",
-        "className": "warlock",
+        "className": "Warlock",
         "classSource": "PHB",
         "shortName": "The Lord Below",
         "subclassFeatures": [
-            "Excise Presence|Warlock|PHB|The Lord Below|immuneresponse|1|immuneresponse"
+            "Excise Presence|Warlock|PHB|The Lord Below|immuneresponse|1|immuneresponse",
+            "Familiar Upgrade|Warlock|PHB|The Lord Below|immuneresponse|6|immuneresponse"
         ]
-    }
+    },
+    {
+      "name": "Hagblood",
+      "source": "immuneresponse",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "shortName": "Hagblood",
+      "subclassFeatures": [
+          "Fortune Favored|Warlock|PHB|Hagblood|immuneresponse|1|immuneresponse"
+      ]
+  },
+  {
+    "name": "Solar",
+    "source": "immuneresponse",
+    "className": "Sorcerer",
+    "classSource": "PHB",
+    "shortName": "Solar",
+    "subclassFeatures": [
+        "Solar Sorcery Expanded Spell List|Sorcerer|PHB|Solar|immuneresponse|1|immuneresponse",
+        "Blazing Glory|Sorcerer|PHB|Solar|immuneresponse|1|immuneresponse"
+      ],
+      "subclassSpells": [
+      "Goodberry",
+      "Healing Word",
+      "Word of Radiance|XGE",
+      "Guiding Bolt"
+    ]
+},
+{
+  "name": "Lunar IR",
+  "source": "immuneresponse",
+  "className": "Sorcerer",
+  "classSource": "PHB",
+  "shortName": "Lunar IR",
+  "subclassFeatures": [
+      "Lunar Sorcery Expanded Spell List|Sorcerer|PHB|Lunar IR|immuneresponse|1|immuneresponse",
+      "Moon Fire|Sorcerer|PHB|Lunar IR|immuneresponse|1|immuneresponse"
+    ],
+  "subclassSpells": [
+    "Detect Evil and Good",
+    "Detect Magic",
+    "Detect Poison and Disease",
+    "Faerie Fire",
+    "Identify",
+    "Jump",
+    "Long Strider",
+    "Protection from Evil and Good",
+    "Purify Food and Drink"
+  ]
+}
 ],
 
 "subclassFeature": [
@@ -50,10 +100,118 @@
             "For example, at level 8, you could remove all memories of you 1 creature experienced in the past 80 minutes…or you could remove all memories of you and 1 other creature from the past 10 minutes of 4 different targets’ memories.",
             "You must have line of sight on a target to use Excise Presence on them, and they must be within 30ft of you.",
             "A target makes a Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a successful save, a target is immune to this effect for the next 24 hours.",
-            "A target’s mind smoothes over the gaps you leave."
-
-        ]
-    }
+            "A target’s mind smoothes over the gaps you leave." ]
+    },
+    {
+      "name": "Familiar Upgrade",
+      "source": "immuneresponse",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "subclassShortName": "The Lord Below",
+      "subclassSource": "immuneresponse",
+      "level": 6,
+      "entries": [
+        "DD upgraded!",
+        "{@creature Dust Devil|IR}"
+      ]
+  },
+  {
+    "name": "Fortune Favored",
+    "source": "immuneresponse",
+    "className": "Warlock",
+    "classSource": "PHB",
+    "subclassShortName": "Hagblood",
+    "subclassSource": "immuneresponse",
+    "level": 1,
+    "entries": [
+      "A great deal of Fate magic was used in your creation; some of it lingers still. You’ve learned to harness this residual energy, bending it fractionally to your will.",
+      "After you roll a d20, you may choose to add a bonus equal to your proficiency bonus to the roll. You cannot do so again until you finish a short or long rest."
+    ]
+},
+{
+  "name": "Solar Sorcery Expanded Spell List",
+  "source": "immuneresponse",
+  "className": "sorcerer",
+  "classSource": "PHB",
+  "subclassShortName": "Solar",
+  "subclassSource": "immuneresponse",
+  "level": 1,
+  "entries": [
+    {
+			"type": "table",
+			"caption": "Solar Sorcery Expanded Spell List",
+			"colLabels": [
+				"Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-9"
+			],
+			"rows": [
+				[
+					"Cantrip",
+					"{@spell Word of Radiance|XGE}"
+				],
+				[
+				  "1",
+				  "{@spell Guiding Bolt}, {@spell Goodberry}, {@spell Healing Word}"]
+			]
+		}
+  ]
+},
+{
+  "name": "Blazing Glory",
+  "source": "immuneresponse",
+  "className": "sorcerer",
+  "classSource": "PHB",
+  "subclassShortName": "Solar",
+  "subclassSource": "immuneresponse",
+  "level": 1,
+  "entries": [
+    "The power of the Sun courses through your veins, cleansing nuclear fire and nourishing light both.",
+    "Whenever you roll for healing or radiant damage, add your level to the roll. "]
+},
+{"name": "Lunar Sorcery Expanded Spell List",
+  "source": "immuneresponse",
+  "className": "sorcerer",
+  "classSource": "PHB",
+  "subclassShortName": "Lunar IR",
+  "subclassSource": "immuneresponse",
+  "level": 1,
+  "entries": ["When you finish a long rest, choose two spells of each spell level available to you to prepare.",
+    {
+    "type": "table",
+    "caption": "Lunar Sorcery Expanded Spell List",
+    "colLabels": [
+      "Level",
+      "Spell"
+    ],
+    "colStyles": [
+      "col-3 text-center",
+      "col-9 text-center"
+    ],
+    "rows": [
+      [
+        "1",
+        "{@spell Detect Evil and Good}, {@spell Detect Magic}, {@spell Detect Poison and Disease}, {@spell Faerie Fire}, {@spell Identify}, {@spell Jump}, {@spell Longstrider}, {@spell Protection from Evil and Good}, {@spell Purify Food and Drink}"
+      ]
+      ]
+  }
+  ]
+},
+{
+  "name": "Moon Fire",
+  "source": "immuneresponse",
+  "className": "sorcerer",
+  "classSource": "PHB",
+  "subclassShortName": "Lunar IR",
+  "subclassSource": "immuneresponse",
+  "level": 1,
+  "entries": [
+    "You can call down the radiant light of the moon on command. You learn the {@spell sacred flame} spell, which doesn't count against the number of sorcerer cantrips you know. When you cast the spell, you can target one creature as normal or target two creatures within range that are within 5 feet of each other."
+  ]
+}
 ],
 
 "optionalfeature": [
@@ -643,5 +801,162 @@
             }
           ]
         }
+],
+"monster":[
+  {
+    "name": "Dust Devil",
+    "source": "IR",
+    "page": 0,
+    "size": [
+      "T"
+    ],
+    "type": "ooze",
+    "alignment": [
+      "U"
+    ],
+    "ac": [
+      15
+    ],
+    "hp": {
+      "average": 16,
+      "formula": "3d4 + 9"
+    },
+    "speed": {
+      "walk": 40,
+      "climb": 40,
+      "fly": 40
+    },
+    "str": 6,
+    "dex": 20,
+    "con": 16,
+    "int": 3,
+    "wis": 10,
+    "cha": 1,
+    "senses": [
+      "blindsight 60 ft."
+    ],
+    "passive": 10,
+    "immune": [
+      "poison",
+      "psychic"
+    ],
+    "conditionImmune": [
+      "paralyzed",
+      "petrified",
+      "poisoned",
+      "prone",
+      "stunned",
+      "unconscious"
+      ],
+    "cr": "1",
+    "trait": [
+      {
+        "name": "Variant: Familiar",
+        "entries": [
+          "DD can serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what DD senses as long as they are within 1 mile of each other. While DD is within 10 feet of its master, the master shares DD’s Weird Absorption trait. "
+        ]
+      },
+      {
+        "name": "Greater Resstance",
+        "entries": [
+          "DD takes about a tenth of the normal damage from bludgeoning, piercing, and slashing. Remove the ones place; what’s left is the damage taken."
+        ]
+      },
+      {
+        "name": "Weird Absorption",
+        "entries": [
+          "When DD would take an odd amount of fire, lightning, thunder, or radiant damage, it instead heals for that amount. "
+        ]
+      },
+      {
+        "name": "Velcro",
+        "entries": [
+          "DD can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+        ]
+      },
+      {
+        "name": "Accessory Ooze",
+        "entries": [
+          "DD is not treated as a separate creature from Zephyr; it is treated by most rules as an item, and additionally, you can make any spell you cast that targets only you also target your familiar."
+        ]
+      },
+      {
+        "name": "Eyes and Ears",
+        "entries": [
+          "A creature touching DD can choose to donate one of its senses, until DD touches the donor again. The donor cannot utilize this sense until it is returned."
+        ]
+      },
+      {
+        "name": "Inconsequential",
+        "entries": [
+          "Other creatures consider DD an object, unless they take an action to inspect DD, making an Investigation check against Zephyr’s spell save DC."
+        ]
+      }
+      
+    ],
+    "action": [
+      {
+        "name": "Static",
+        "entries": [
+          "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d4 + 5}) lightning damage."
+        ]
+      }
+    ],
+    "bonus": [
+    
+      {
+        "name": "Slippery Bastard",
+        "entries": [
+          "On each of its turns, the DD can use a bonus action to take the {@action dash}, {@action disengage}, or {@action hide} action."
+        ]
+      }
+    ],
+    "traitTags": [
+      "Spider Climb"
+    ],
+    "senseTags": [
+      "B"
+    ],
+    "damageTags": [
+      "L"
+    ]
+  }
+],
+"table": [
+    {
+        "name": "Approved Permanancy Spells",
+        "source": "IR",
+        "page": 0,
+        "colLabels": [
+          "Level",
+          "Spell"
+        ],
+        "colStyles": [
+          "col-4 text-center",
+          "col-8"
+        ],
+        "rows": [
+          [
+            "1",
+            "{@spell Beast Bond|xge}, {@spell Comprehend Languages}, {@spell Detect Magic}, {@spell Detect Poison and Disease}, {@spell Expeditious Retreat}, {@spell Jump}, {@spell Longstrider}, {@spell Mage Armor}, {@spell Protection from Evil and Good}, {@spell Shield of Faith}, {@spell Speak with Animals}"
+          ],
+          ["2",
+          "{@spell Aid}, {@spell Alter Self}, {@spell Borrowed Knowledge|scc}, {@spell Darkvision}, {@spell Detect Thoughts}, {@spell Enhance Ability}, {@spell Protection from Poison}, {@spell Spider Climb}, {@spell See Invisibility}"],
+          ["3",
+          "{@spell Fly}, {@spell Intellect Fortress|tce}, {@spell Nondetection}, {@spell Protection from Energy}, {@spell Tongues}, {@spell Waterbreathing}"],
+          ["4",
+          "{@spell Aura of Life}, {@spell Aura of Purity}, {@spell Fire Shield}, {@spell Freedom of Movement}, {@spell Stoneskin}"],
+          ["5",
+          "{@spell Skill Empowerment|xge}"],
+          ["6",
+          "{@spell Investiture of Flame|XGE}, {@spell Investiture of Stone|XGE}, {@spell Investiture of Wind|XGE}, {@spell Investiture of Ice|XGE}, {@spell True Seeing}, {@spell Wind Walk}"],
+          ["7",
+          "{@spell Regenerate}"],
+          ["8",
+          "{@spell Antipathy/Sympathy}, {@spell Glibness}, {@spell Mind Blank}"],
+          ["9",
+          "{@spell Foresight}, {@spell Shapechange}"]
+          ]
+    }
 ]
 }
