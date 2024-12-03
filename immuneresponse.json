@@ -112,7 +112,7 @@
       "level": 6,
       "entries": [
         "DD upgraded!",
-        "{@creature Dust Devil|IR}"
+        "{@creature Dust Devil|immuneresponse}"
       ]
   },
   {
@@ -1047,7 +1047,7 @@
 "monster":[
   {
     "name": "Dust Devil",
-    "source": "IR",
+    "source": "immuneresponse",
     "page": 0,
     "size": [
       "T"
@@ -1165,7 +1165,7 @@
   },
   {
     "name": "Ganymede Familiar",
-    "source": "IR",
+    "source": "immuneresponse",
     "page": 0,
     "size": [
       "L"
@@ -1277,7 +1277,7 @@
 "table": [
     {
         "name": "Approved Permanancy Spells",
-        "source": "IR",
+        "source": "immuneresponse",
         "page": 0,
         "colLabels": [
           "Level",
