@@ -80,7 +80,8 @@
     "Jump",
     "Long Strider",
     "Protection from Evil and Good",
-    "Purify Food and Drink"
+    "Purify Food and Drink",
+    "Transfigure Vessel|immuneresponse"
   ]
 }
 ],
@@ -945,22 +946,7 @@
   ]
       },
     "The target repeats this save at the start of each of their turns, ending this spell on them on a success."
-      ],
-      "classes": {
-      "fromSubclass": [
-        {
-          "class": {
-            "name": "Sorcerer",
-            "source": "PHB"
-          },
-          "subclass": {
-            "name": "Lunar IR",
-            "shortName": "Lunar IR",
-            "source": "IR"
-          }
-        }
-    ]
-  }
+      ]
   },
     {
       "name": "Link Aspect",
