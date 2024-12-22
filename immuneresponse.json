@@ -984,7 +984,191 @@
 		"If they fail this save, you may choose 1 ability score, armor class, movement speed, or proficiency bonus. Whatever you choose, theirs can be no higher than yours.",
 		"The target repeats this save at the start of each of their turns, ending this spell on them on a success. Each time this save is made, the rules above apply."
       ]
+      },
+      {
+        "name": "Conjure Dirt",
+        "source": "immuneresponse",
+        "page": 0,
+        "level": 5,
+        "school": "C",
+        "time": [
+          {
+            "number": 20,
+            "unit": "minute"
+          }
+        ],
+        "range": {
+          "type": "point",
+            "distance": {
+          "type": "feet",
+          "amount": 120
+          }
+        },
+        "components": {
+        "v": true,
+        "s": true,
+        "m": {
+        "text": "a rock, a pinch of dirt, a drop of water"
+          }
+        },
+            "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+        "meta": {
+          "ritual": false
+        },
+        "entries": [
+          "Conjure dirt that fits within an 40x40x10 foot area. Customize its moisture level on cast.",
+      "It's just dirt."
+        ]
+    },
+    {
+      "name": "Just Steal A Tree From Literally Anywhere",
+      "source": "immuneresponse",
+      "page": 0,
+      "level": 5,
+      "school": "C",
+      "time": [
+        {
+          "number": 10,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+          "distance": {
+        "type": "feet",
+        "amount": 5
+        }
+      },
+      "components": {
+      "v": true,
+      "s": true,
+      "m": {
+      "text": "something from the Material Plane"
+        }
+      },
+          "duration": [
+      {
+        "type": "instant"
       }
+    ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "Conjure a mature tree from somewhere -- anywhere -- on the Material Plane. It appears in a place the caster does not choose, but close enough to touch."
+      ]
+  },
+  {
+    "name": "Create a Tree",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 5,
+    "school": "T",
+    "time": [
+      {
+        "number": 30,
+        "unit": "minute"
+      }
+    ],
+    "range": {
+      "type": "point",
+        "distance": {
+      "type": "touch"
+      }
+    },
+    "components": {
+    "v": true,
+    "s": true,
+    "m": {
+    "text": "A mature tree, not consumed; A suitable plot of land for a tree to grow in, consumed"
+      }
+    },
+        "duration": [
+    {
+      "type": "instant"
+    }
+  ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+      "Transmutation Essentia: Herba.",
+  "A tree! At long last, the platonic ideal of a tree!",
+  "Creates a mature tree from provided suitable soil. A brief but beautiful ray of sunlight shines upon the tree."
+    ]
+},
+{
+  "name": "Create Fertilizer",
+  "source": "immuneresponse",
+  "page": 0,
+  "level": 3,
+  "school": "C",
+  "time": [
+    {
+      "number": 1,
+      "unit": "action"
+    }
+  ],
+ "range": {
+"type": "point",
+"distance": {
+  "type": "feet",
+  "amount": 30
+}
+},
+  "components": {
+  "v": true,
+  "s": true
+    },
+  "duration": [
+  {"type": "instant"}
+  ],
+  "meta": {
+    "ritual": false
+  },
+  "entries": [
+    "You create 60 pounds of fertilizer on the ground or in containers within range."
+  ]
+},
+{"name": "Create Grove",
+  "source": "immuneresponse",
+  "page": 0,
+  "level": 6,
+  "school": "T",
+  "time": [
+    {
+      "number": 1,
+      "unit": "minute"
+    }
+  ],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+  "components": {
+  "v": true,
+  "s": true,
+  "m": {
+      "text": "a mature tree, not consumed; suitable plots of land for 16 trees to grow in, consumed"}
+	},
+  "duration": [
+  {"type": "instant"}
+  ],
+  "meta": {
+    "ritual": false
+  },
+  "entries": [
+    "Transmutation Essentia: Herba.",
+	"Now we're gardening with magic!",
+	"Transmutes 16 mature trees from provided suitable soil. A brief, intense ray of sunlight shines upon the grove."
+  ]
+}
 ],
 
 "variantrule": [
@@ -1164,7 +1348,7 @@
     ]
   },
   {
-    "name": "Ganymede Familiar",
+    "name": "Winter Wraith Wolf",
     "source": "immuneresponse",
     "page": 0,
     "size": [
