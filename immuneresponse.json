@@ -11,7 +11,7 @@
       "convertedBy": [
         "amy"
       ],
-      "version": "1.0",
+      "version": "1.1",
       "url": "https://raw.githubusercontent.com/jyetie/5etoolshomebrew/refs/heads/main/immuneresponse.json",
       "color": "e231e1"
     }
@@ -19,7 +19,7 @@
   "edition": "classic",
   "status": "ready",
   "dateAdded": 1733217249,
-  "dateLastModified": 1733217249
+  "dateLastModified": 1747193280
 },
 
 "subclass": [
@@ -221,6 +221,50 @@
 
 "optionalfeature": [
   {
+    "name": "Defy Fate",
+    "source": "immuneresponse",
+    "page": 0,
+    "srd": false,
+    "featureType": [
+      "OTH"
+    ],
+    "prerequisite": [
+      {
+        "level": {
+          "level": 9
+        },
+        "item": [
+          "Aslanta"
+        ]
+      }
+    ],
+    "entries": [
+    "Pulses thrum as one. You refuse to let hope die. When Aslanta or someone in her inner circle—per The Ties That Bind Us—falls to zero hit points or otherwise is close to death, Aslanta and any others that are so bound may choose to travel through the Feywild along these ties. If initiative has begun, they enter it immediately, in its current place in time, even going so far as to interrupt anything currently occurring, and may take a full turn before initiative resumes as per the usual rules."
+    ]
+  },
+  {
+    "name": "Seek Truth",
+    "source": "immuneresponse",
+    "page": 0,
+    "srd": false,
+    "featureType": [
+      "OTH"
+    ],
+    "prerequisite": [
+      {
+        "level": {
+          "level": 9
+        },
+        "item": [
+          "Aslanta"
+        ]
+      }
+    ],
+    "entries": [
+    "As an action, commune with a fey within reach. You gain knowledge of their story, their history, their lore, and their life. This information may consist of current tales, forgotten stories, or even secret lore that has never been widely known. The information you gain is true, precise, and detailed. However, it may be couched in figurative language."
+    ]
+  },
+  {
 	"name": "Inverted Gaze",
 	"source": "immuneresponse",
 	"page": 0,
@@ -229,7 +273,7 @@
 		"EI"
 	],
 	"entries": [
-		"You cannot be surprised while conscious, and if a creature within 30 feet of you is looking at you, you immediately become aware of that creature's location."
+		"You cannot be surprised while conscious, and if a creature within 30 feet of you is perceiving you, you immediately become aware of that creature's location."
 	]
 },
   {
@@ -246,7 +290,7 @@
 				"level": 5
       },
 			"item": [
-				"Zephyr"
+				"esper"
 			]
 		}
 	],
@@ -285,7 +329,7 @@
 				"level": 5
       },
 			"item": [
-				"Zephyr"
+				"esper"
 			]
 		}
 	],
@@ -522,6 +566,233 @@
         }
       ]
     }
+  },
+  {
+    "name": "Conjure Meal",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 5,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "action"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+      "You create enough food and drink to sustain 5 medium humanoids for 1 day, which appears on the ground or in containers within range. The food and drink are typical specimens of kinds specified by the caster, and is mundane. Notably, this food and drink has the following properties: it is nourishing, and spoils if uneaten after 16 hours."
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Teleport Self",
+    "source": "immuneresponse",
+    "page": 0,
+    "srd": false,
+    "level": 6,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "action"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "m": "a teleport key"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+  "This spell teleports you to a destination for which you have a teleport key.",
+  "The destination must be on the same plane of existence as you."
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Baby's First Soul Cage",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 5,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "reaction",
+        "condition": "which you take when a humanoid you can see within 60 feet of you dies"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "a tiny silver cage worth 100 gp",
+        "cost": 10000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "entries": [
+      "This spell snatches the soul of a humanoid as it dies and traps it inside the tiny cage you use for the material component. A stolen soul remains inside the cage until the spell ends or until you destroy the cage, which ends the spell.",
+      "While in the cage, the soul is totally fine. It's just straight up chillin'. Taking a little nap. Nothing to worry about."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+  {
+    "name": "Grant Agency",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 5,
+    "school": "T",
+    "time": [
+      {
+        "number": 20,
+        "unit": "minute"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+          "m": "foci worth at least 100 gp each: a jeweled horn, a crystal eye, and a gilded hand"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+          "You temporarily grant a creature the ability to see and hear with preternatural acuity.",
+          "Additionally, you grant it the ability to manipulate its environment with fine manual dexterity, via a force construct under its control. This force construct is visible—its precise shape and appearance determined by the target creature—and has an effective Strength Score of 10."	],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+  },
+  {
+    "name": "Cleanse",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "action"
+      }
+    ],
+    "range": {
+      "type": "sphere",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+          "m": "any mana cryst, which the spell consumes"
+    },
+    "duration": [
+      {
+        "type": "special"
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+          "All matter that is nonmagical and not a creature within 30ft of the caster is purged of poison, disease, filth, and corruption.",
+        "Duration: Concentration"	],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
   },
   {
     "name": "Grasp Tether",
@@ -1063,6 +1334,101 @@
       ]
   },
   {
+    "name": "Organize Mineral",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "action"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+          "m": "a crystal worth more than the desired crystal"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+          "Transmution Essentia: Vitreus",
+          "Transmute a silicate material you are holding into a crystalline silicate."	],
+      "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "When you cast this spell using a spell slot of 4th level or higher, more types of minerals become available for transmutation."
+        ]
+      }
+    ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+  },
+  {
+    "name": "Catalyze Attunement",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 5,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "action"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+          "m": "an object, creature, or phenomenon strongly tied to a specific plane, which is consumed. Alternatively, something of sufficient power tied to a specific plane, which is not consumed."
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "meta": {
+      "ritual": false
+    },
+    "entries": [
+          "You harness planar power, channeling it to aid in attunement to that plane."	],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
+  },
+  {
     "name": "Create a Tree",
     "source": "immuneresponse",
     "page": 0,
@@ -1168,6 +1534,73 @@
 	"Now we're gardening with magic!",
 	"Transmutes 16 mature trees from provided suitable soil. A brief, intense ray of sunlight shines upon the grove."
   ]
+},
+{
+	"name": "Summon Vehicle",
+	"source": "immuneresponse",
+	"page": 0,
+	"level": 3,
+	"school": "C",
+	"time": [
+    	{
+        	"number": 10,
+        	"unit": "minute"
+    	}
+	],
+	"range": {
+    	"type": "point",
+    	"distance": {
+        	"type": "feet",
+        	"amount": 30
+    	}
+	},
+	"components": {
+    	"v": true,
+    	"s": true
+	},
+	"duration": [
+    	{
+        	"type": "timed",
+        	"duration": {
+            	"type": "hour",
+            	"amount": 8
+        	}
+    	}
+	],
+	"entries": [
+    	"You summon a spirit that assumes the form of a nonmilitary land vehicle of your choice, appearing in an unoccupied space within range. The vehicle has the statistics of a normal vehicle of its sort, though it is celestial, fey, or fiendish (your choice in origin). The physical characteristics of the vehicle reflect its origin to some degree. For example, a fiendish SUV might be jet black in color, with tinted windows and a sinister-looking front grille.",
+    	"You have a supernatural bond with the conjured vehicle that allows you to drive beyond your normal ability. While driving the conjured vehicle, you are considered proficient with vehicles of its type, and you add double your proficiency bonus to ability checks related to driving the vehicle. While driving the vehicle, you can make any spell you cast that targets only you also target the vehicle.",
+    	"If the vehicle drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss the vehicle at any time as an action, causing it to disappear.",
+    	"You can't have more than one vehicle bonded by this spell at a time. As an action, you can release the vehicle from its bond at any time, causing it to disappear."
+	],
+	"entriesHigherLevel": [
+    	{
+        	"type": "entries",
+        	"name": "At Higher Levels",
+        	"entries": [
+            	"When you cast this spell using a spell slot of 3rd level or higher, you can conjure a nonmilitary water vehicle large enough to carry six Medium creatures. When you cast this spell using a spell slot of 5th level or higher, you can conjure a nonmilitary air vehicle large enough to carry ten Medium creatures. When you cast this spell using a spell slot of 7th level or higher, you can conjure any type of vehicle, subject to the DM's approval."
+        	]
+    	}
+	],
+	"classes": {
+    	"fromClassList": [
+        	{
+            	"name": "Warlock",
+            	"source": "PHB"
+        	},
+        	{
+            	"name": "Sorcerer",
+            	"source": "PHB"
+        	},
+        	{
+            	"name": "Wizard",
+            	"source": "PHB"
+        	}
+    	]
+	},
+	"miscTags": [
+    	"SMN"
+	]
 }
 ],
 
@@ -1279,7 +1712,7 @@
       {
         "name": "Variant: Familiar",
         "entries": [
-          "DD can serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what DD senses as long as they are within 1 mile of each other. While DD is within 10 feet of its master, the master shares DD’s Weird Absorption trait. "
+          "DD can serve another creature as a familiar, forming a telepathic bond with her willing master. While the two are bonded, the master can sense what DD senses as long as they are within 1 mile of each other. While DD is within 10 feet of her master, the master shares DD’s Weird Absorption trait. "
         ]
       },
       {
@@ -1291,7 +1724,7 @@
       {
         "name": "Weird Absorption",
         "entries": [
-          "When DD would take an odd amount of fire, lightning, thunder, or radiant damage, it instead heals for that amount. "
+          "When DD would take an odd amount of fire, lightning, thunder, or radiant damage, she instead heals for that amount. "
         ]
       },
       {
@@ -1303,7 +1736,7 @@
       {
         "name": "Accessory Ooze",
         "entries": [
-          "DD is not treated as a separate creature from Zephyr; it is treated by most rules as an item, and additionally, you can make any spell you cast that targets only you also target your familiar."
+          "DD is not treated as a separate creature from esper; she is treated by most rules as an item, and additionally, you can make any spell you cast that targets only you also target your familiar."
         ]
       },
       {
@@ -1315,7 +1748,7 @@
       {
         "name": "Inconsequential",
         "entries": [
-          "Other creatures consider DD an object, unless they take an action to inspect DD, making an Investigation check against Zephyr’s spell save DC."
+          "Other creatures consider DD an object, unless they take an action to inspect DD, making an Investigation check against esper’s spell save DC."
         ]
       }
       
@@ -1333,7 +1766,7 @@
       {
         "name": "Slippery Bastard",
         "entries": [
-          "On each of its turns, the DD can use a bonus action to take the {@action dash}, {@action disengage}, or {@action hide} action."
+          "On each of her turns, DD can use a bonus action to take the {@action dash}, {@action disengage}, or {@action hide} action."
         ]
       }
     ],
