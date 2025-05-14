@@ -224,7 +224,6 @@
     "name": "Defy Fate",
     "source": "immuneresponse",
     "page": 0,
-    "srd": false,
     "featureType": [
       "OTH"
     ],
@@ -246,7 +245,6 @@
     "name": "Seek Truth",
     "source": "immuneresponse",
     "page": 0,
-    "srd": false,
     "featureType": [
       "OTH"
     ],
@@ -268,7 +266,6 @@
 	"name": "Inverted Gaze",
 	"source": "immuneresponse",
 	"page": 0,
-	"srd": false,
 	"featureType": [
 		"EI"
 	],
@@ -280,7 +277,6 @@
 	"name": "Incept Conspiracy",
 	"source": "immuneresponse",
 	"page": 0,
-	"srd": false,
 	"featureType": [
 		"OTH"
 	],
@@ -319,7 +315,6 @@
 	"name": "Presume Invitation",
 	"source": "immuneresponse",
 	"page": 0,
-	"srd": false,
 	"featureType": [
 		"OTH"
 	],
@@ -347,7 +342,6 @@
 	"name": "The Ties That Bind Us",
 	"source": "immuneresponse",
 	"page": 0,
-	"srd": false,
 	"featureType": [
 		"OTH"
 	],
@@ -373,7 +367,6 @@
 	"name": "Adrenaline High",
 	"source": "immuneresponse",
 	"page": 0,
-	"srd": false,
 	"featureType": [
 		"OTH"
 	],
@@ -407,7 +400,6 @@
 	"name": "Betray Intention",
 	"source": "immuneresponse",
 	"page": 0,
-	"srd": false,
 	"featureType": [
 		"OTH"
 	],
@@ -469,7 +461,6 @@
 	"name": "Sarin's Poison Feature",
 	"source": "immuneresponse",
 	"page": 0,
-	"srd": false,
 	"featureType": [
 		"OTH"
 	],
@@ -493,7 +484,6 @@
 	"name": "Dissociate Toxin",
 	"source": "immuneresponse",
 	"page": 0,
-	"srd": false,
 	"featureType": [
 		"OTH"
 	],
@@ -611,10 +601,76 @@
     }
   },
   {
+    "name": "Shade's Embrace",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 1,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "bonus action"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "s": true,
+      "m": {
+        "text": "5 hp of living blood"
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "You convert the positive energy present in the sacrificed vitality into negative energy, manipulating it to defend your allies.",
+          "You gain 3 points for the duration. A point must be spent on one of the following boons, and assigned to an allied creature within range.",
+            {
+        "type": "list",
+        "items": [
+          "+1 AC",
+          "+5 Temporary HP",
+          "+1 to Saves"
+        ]
+      },
+          "These effects may stack. Once a boon is used, it is consumed.",
+          "In response to an ally in range being threatened, you may use a reaction to convert and redistribute any amount of boons from affected allies into another form of equivalent point value. You may also do this as a bonus action.",
+          "If an ally leaves this range, any remaining boons are converted back into points, which are returned to you."
+      ],
+      "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "When you cast this spell using a spell slot of 2nd level or higher, you may sacrifice 5 hp of blood to gain 3 additional points for each slot level above 1st."
+        ]
+      }
+    ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+  {
     "name": "Teleport Self",
     "source": "immuneresponse",
     "page": 0,
-    "srd": false,
     "level": 6,
     "school": "C",
     "time": [
