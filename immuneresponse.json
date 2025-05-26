@@ -31,7 +31,8 @@
         "shortName": "The Lord Below",
         "subclassFeatures": [
             "Excise Presence|Warlock|PHB|The Lord Below|immuneresponse|1|immuneresponse",
-            "Familiar Upgrade|Warlock|PHB|The Lord Below|immuneresponse|6|immuneresponse"
+            "Familiar Upgrade|Warlock|PHB|The Lord Below|immuneresponse|6|immuneresponse",
+            "Beneath the Lord's Watchful Eyes|Warlock|PHB|The Lord Below|immuneresponse|10|immuneresponse"
         ]
     },
     {
@@ -115,6 +116,19 @@
         "{@creature Dust Devil|immuneresponse}"
       ]
   },
+  {
+    "name": "Beneath the Lord's Watchful Eyes",
+    "source": "immuneresponse",
+    "className": "Warlock",
+    "classSource": "PHB",
+    "subclassShortName": "The Lord Below",
+    "subclassSource": "immuneresponse",
+    "level": 10,
+    "entries": [
+      "Your Lord lends you sight beyond sight. Yet another strange sense, this one parallel to your psychic perception.",
+      "You focus on an individual within 30ft that you can perceive. You are able to sense the minds of everyone who has knowledge of them in their memories."
+    ]
+},
   {
     "name": "Fames",
     "source": "immuneresponse",
@@ -600,6 +614,53 @@
       ]
     }
   },
+  {
+    "name": "Restore Fine Complexity Limb",
+    "source": "immuneresponse",
+    "page": 0,
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 10,
+        "unit": "minute"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "sufficient material used in target's natural healing"
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "You touch a creature and stimulate its natural healing ability. For the duration of the spell, the target regains 1 hit point at the start of each minute.",
+      "The target's severed body members (fingers, legs, tails, and so on), if any, are restored once it has gained an equivalent number of hit points from this spell that losing the limb cost, or a fraction of their maximum hit points equal to 1 over their total number of limbs, heads, and torsos—whichever is greater. If you have the severed part and hold it to the stump for 1 minute, the spell causes the limb to knit to the stump."
+    ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
   {
     "name": "Shade's Embrace",
     "source": "immuneresponse",
