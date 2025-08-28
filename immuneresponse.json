@@ -104,7 +104,7 @@
             "A target’s mind smoothes over the gaps you leave." ]
     },
     {
-      "name": "Familiar Upgrade",
+      "name": "Untitle Vassal",
       "source": "immuneresponse",
       "className": "Warlock",
       "classSource": "PHB",
@@ -286,6 +286,52 @@
 	"entries": [
 		"You cannot be surprised while conscious, and if a creature within 30 feet of you is perceiving you, you immediately become aware of that creature's location."
 	]
+},
+{
+	"name": "Subtle Absence",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"EI"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 5
+      },
+			"item": [
+				"Patron: The Lord Below"
+			]
+		}
+	],
+	"entries": [
+"DD can move through negative W space",
+"As a reaction, when targeted by attack, spell, or other effect that would require a save, dip into w space. Uses your reaction"
+  ]
+},
+{
+	"name": "Unknown Legacy",
+	"source": "immuneresponse",
+	"page": 0,
+	"srd": false,
+	"featureType": [
+		"EI"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 12
+      },
+			"item": [
+				"Patron: The Lord Below"
+			]
+		}
+	],
+	"entries": [
+"As a bonus action, you become far more difficult to notice for any creature that is not actively noticing you at the time of activation.",
+"You remain largely imperceptible to living creatures until you take any course of action that would effect a creature other than yourself, or would be excessively obvious (for example, speaking or waving your hands in the air). You do not gain the normal benefits of being unseen, beyond creatures not noticing you. If a creature becomes aware of your presence, such as by stumbling into you, you become noticeable to them."
+  ]
 },
   {
 	"name": "Incept Conspiracy",
