@@ -291,7 +291,6 @@
 	"name": "Subtle Absence",
 	"source": "immuneresponse",
 	"page": 0,
-	"srd": false,
 	"featureType": [
 		"EI"
 	],
@@ -314,7 +313,6 @@
 	"name": "Unknown Legacy",
 	"source": "immuneresponse",
 	"page": 0,
-	"srd": false,
 	"featureType": [
 		"EI"
 	],
