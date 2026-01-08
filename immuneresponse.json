@@ -330,7 +330,7 @@
 		"Generally speaking, checks are not required to perform Psionic Magic. However, this does not bar you from choosing to make a check, if you believe this may lead to a more desirable outcome.",
 		"When you use Psionic magic—as opposed to arcane magic—that requires saving throws, you may first require them to be made against your spell save DC. If you are not satisfied with that result, you may instead contest their saving throw with a Charisma check. If it is a Psionic magic you have practiced, you are assumed to have expertise in this Charisma check."
 	]
-}
+},
 {
 	"name": "Unknown Legacy",
 	"source": "immuneresponse",
