@@ -310,6 +310,28 @@
   ]
 },
 {
+	"name": "Exceptional",
+	"source": "immuneresponse",
+	"page": 0,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 9
+      },
+			"item": [
+				"esper"
+			]
+		}
+	],
+	"entries": [
+		"Generally speaking, checks are not required to perform Psionic Magic. However, this does not bar you from choosing to make a check, if you believe this may lead to a more desirable outcome.",
+		"When you use Psionic magic—as opposed to arcane magic—that requires saving throws, you may first require them to be made against your spell save DC. If you are not satisfied with that result, you may instead contest their saving throw with a Charisma check. If it is a Psionic magic you have practiced, you are assumed to have expertise in this Charisma check."
+	]
+}
+{
 	"name": "Unknown Legacy",
 	"source": "immuneresponse",
 	"page": 0,
@@ -368,7 +390,70 @@
             "Co-Conspirator: They will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
 	]
 },
-
+{
+	"name": "Emerald Mind",
+	"source": "immuneresponse",
+	"page": 0,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 13
+      },
+			"item": [
+				"esper"
+			]
+		}
+	],
+	"entries": [
+		"A Dragon is immune to their element—immune to all the detriments of their mana. A Dragon is sovereign of their domain, and as a Dragon, your domain is your body—your domain is your mind.",
+		"No enchantment magic may be used against you. Psychic mana may bring you no harm. Tricks of the mind simply do not function upon you.",
+		"Even so, protections too tight may choke and stifle growth; such a thing is intolerable. You are free to develop and flourish—after all, this Dragon is yet to mature.",
+		{"type": "list",
+            "items": [
+              "Immunity to Divination and Enchantment magic",
+              "Immunity to psychic damage",
+              "Immunity to psychic mana, including mana poisoning from psychic mana",
+              "Immune to the Charmed and Frightened conditions",
+              "Immune to certain illusions, specifically of the mental variety",
+              "Gain insight into materials that may increase your defenses, and an intuition of their possible benefits"]
+            }
+	]
+},
+{
+  "name": "Defiant Calling",
+	"source": "immuneresponse",
+	"page": 0,
+	"featureType": [
+		"OTH"
+	],
+  "prerequisite": [
+    {
+			"level": {
+				"level": 13
+      },
+			"item": [
+				"esper"
+			]
+		}
+	],
+	"entries": [
+		"You weren’t born to be a Dragon. No one expected you to befriend The Lord Below. Those who made you what you are, never intended you to be a Champion. They didn’t want you to befriend Q, to befriend FC-7, to save his kin. You weren’t supposed to be able to save Aslanta, to find Ilori, to survive the Horrors from beyond your reality—from beyond your comprehension. No one should have been able to travel to the past, and you certainly weren’t supposed save the future and present Queen of Summer.",
+		"You don’t much care for what you’re {@italic supposed} to do.",
+		{
+			"type": "entries",
+			"name": "Defiant Calling",
+			"entries": [
+				"Roll 1d100. If your roll is less than or equal to your accrued Deeds, Defiant Calling is successfully triggered. On such a success, the number rolled is subtracted from your Deeds. On a failure, you may not attempt again until you complete a long rest. You are exempt from this cooldown during initiative.",
+        "{@bold Deeds}",
+        "Count those whose salvation was only made possible because of your efforts—those whose salvation could not have occurred without you.",
+        "{@bold Effects}",
+        "When you are needed most, you may attempt to bend your abilities to bridge the gap between what is within your power, and what is needed for salvation."]
+		}
+		]
+},
 {
 	"name": "Presume Invitation",
 	"source": "immuneresponse",
@@ -1838,8 +1923,8 @@
       15
     ],
     "hp": {
-      "average": 16,
-      "formula": "3d4 + 9"
+      "average": 23,
+      "formula": "3d4 + 15"
     },
     "speed": {
       "walk": 40,
@@ -1848,12 +1933,13 @@
     },
     "str": 6,
     "dex": 20,
-    "con": 16,
+    "con": 20,
     "int": 3,
     "wis": 10,
     "cha": 1,
     "senses": [
-      "blindsight 60 ft."
+      "blindsight 60 ft.",
+      "eyes, too!"
     ],
     "passive": 10,
     "immune": [
